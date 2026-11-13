@@ -17,7 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-brand-white text-brand-charcoal antialiased selection:bg-brand-gold selection:text-brand-white`}>
+      {/* bg-white ensures the page matches the navbar seamlessly */}
+      <body className={`${inter.className} bg-white text-brand-charcoal antialiased selection:bg-brand-gold selection:text-white`}>
         <Navbar />
         <main className="mx-auto max-w-7xl px-6">
           {children}
