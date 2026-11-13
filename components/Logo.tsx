@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link href="/" className="flex items-center shrink-0 group">
       <Image
-        src="/contentlablogo.png" 
+        src="/contentlab-logo.png" 
         alt="ContentLab Logo"
         width={220} 
         height={60}
