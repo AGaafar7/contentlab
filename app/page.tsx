@@ -42,6 +42,7 @@ export default function HomePage() {
             src="/camera.jpg" 
             alt="Content Lab Production Setup"
             fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
             priority
           />
@@ -77,13 +78,13 @@ export default function HomePage() {
       {/* STUDIO TEASER SECTION */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="relative h-[400px] rounded-3xl overflow-hidden group">
-           <Image src="/orange-chair.jpg" alt="Studio Setup" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+           <Image src="/orange-chair.jpg" alt="Studio Setup" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
            <div className="absolute inset-0 bg-black/20 flex items-end p-8">
              <h3 className="text-white text-2xl font-black">Premium Sets</h3>
            </div>
         </div>
         <div className="relative h-[400px] rounded-3xl overflow-hidden group">
-           <Image src="/two-chairs.jpg" alt="Studio Setup 2" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+           <Image src="/two-chairs.jpg" alt="Studio Setup 2" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
            <div className="absolute inset-0 bg-black/20 flex items-end p-8">
              <h3 className="text-white text-2xl font-black">Cinematic Lighting</h3>
            </div>

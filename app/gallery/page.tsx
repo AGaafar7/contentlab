@@ -29,11 +29,12 @@ export default function GalleryPage() {
             className={`relative group overflow-hidden rounded-2xl bg-neutral-100 ${img.className}`}
           >
             <Image
-              src={img.src}
-              alt={img.alt}
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
+  src={img.src}
+  alt={img.alt}
+  fill
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Add this line
+  className="object-cover transition-transform duration-700 group-hover:scale-105"
+/>
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <span className="text-white font-bold text-sm tracking-widest uppercase">{img.alt}</span>
             </div>

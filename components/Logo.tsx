@@ -5,12 +5,12 @@ export default function Logo() {
   return (
     <Link href="/" className="flex items-center shrink-0 group">
       <Image
-        src="/contentlablogo.png" // Make sure this matches your file name exactly (e.g., .jpg)
+        src="/contentlablogo.png" 
         alt="ContentLab Logo"
-        width={220} // You can adjust this width to make the logo bigger or smaller
+        width={220} 
         height={60}
-        className="object-contain transition-transform duration-300 group-hover:scale-105"
-        priority // Tells Next.js to load this immediately since it's in the navbar
+        className="w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-105" // Added w-auto h-auto
+        priority 
       />
     </Link>
   );
