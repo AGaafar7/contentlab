@@ -7,9 +7,10 @@ export default function Logo() {
       <Image
         src="/contentlablogo.png" 
         alt="ContentLab Logo"
-        width={220} 
-        height={60}
-        className="w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-105" // Added w-auto h-auto
+        width={260} // Made it bigger
+        height={70}
+        // mix-blend-multiply removes the white box background
+        className="w-auto h-auto object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
         priority 
       />
     </Link>
