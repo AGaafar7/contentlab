@@ -37,14 +37,14 @@ export default function HomePage() {
         </div>
 
         {/* Hero Image - Camera Silhouette */}
-        <div className="relative w-full h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-          <Image 
-            src="/camera.jpg" 
-            alt="Content Lab Production Setup"
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover"
-            priority
+                <div className="relative w-full h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+          <video 
+            src="/showreel.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         </div>
